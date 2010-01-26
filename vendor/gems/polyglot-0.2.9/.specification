@@ -9,7 +9,7 @@ autorequire:
 bindir: bin
 cert_chain: []
 
-date: 2009-09-12 00:00:00 -05:00
+date: 2009-09-12 01:00:00 -04:00
 default_executable: 
 dependencies: 
 - !ruby/object:Gem::Dependency 
@@ -52,6 +52,8 @@ rdoc_options:
 - --main
 - README.txt
 require_paths: 
+- bin
+- bin
 - lib
 required_ruby_version: !ruby/object:Gem::Requirement 
   requirements: 

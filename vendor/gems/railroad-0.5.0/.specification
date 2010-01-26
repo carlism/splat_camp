@@ -1,45 +1,41 @@
 --- !ruby/object:Gem::Specification 
-name: yamler
+name: railroad
 version: !ruby/object:Gem::Version 
-  version: 0.1.0
+  version: 0.5.0
 platform: ruby
 authors: 
-- markbates
+- Javier Smaldone
 autorequire: 
 bindir: bin
 cert_chain: []
 
-date: 2009-02-19 01:00:00 -05:00
-default_executable: 
+date: 2008-05-09 00:00:00 -04:00
+default_executable: railroad
 dependencies: []
 
-description: "yamler was developed by: markbates"
-email: mark@mackframework.com
-executables: []
-
+description: 
+email: javier@smaldone.com.ar
+executables: 
+- railroad
 extensions: []
 
 extra_rdoc_files: 
 - README
+- COPYING
 files: 
-- lib/yamler/template.rb
-- lib/yamler/yamler.rb
-- lib/yamler.rb
+- lib/railroad/aasm_diagram.rb
+- lib/railroad/models_diagram.rb
+- lib/railroad/app_diagram.rb
+- lib/railroad/controllers_diagram.rb
+- lib/railroad/diagram_graph.rb
+- lib/railroad/options_struct.rb
+- ChangeLog
+- COPYING
+- rake.gemspec
 - README
-- doc/classes/Yamler/Template.html
-- doc/classes/Yamler.html
-- doc/created.rid
-- doc/files/lib/yamler/template_rb.html
-- doc/files/lib/yamler/yamler_rb.html
-- doc/files/lib/yamler_rb.html
-- doc/files/README.html
-- doc/fr_class_index.html
-- doc/fr_file_index.html
-- doc/fr_method_index.html
-- doc/index.html
-- doc/rdoc-style.css
+- bin/railroad
 has_rdoc: true
-homepage: http://www.mackframework.com
+homepage: http://railroad.rubyforge.org
 licenses: []
 
 post_install_message: 
@@ -61,10 +57,10 @@ required_rubygems_version: !ruby/object:Gem::Requirement
   version: 
 requirements: []
 
-rubyforge_project: magrathea
+rubyforge_project: railroad
 rubygems_version: 1.3.5
 signing_key: 
 specification_version: 2
-summary: yamler
+summary: A DOT diagram generator for Ruby on Rail applications
 test_files: []
 
