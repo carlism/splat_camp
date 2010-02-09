@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :occurences
+
+  map.resources :events
+
   map.root :controller => 'homepage'
 
   map.login        '/login',        :controller => 'user_sessions', :action => 'new'

@@ -1,0 +1,7 @@
+> sudo rake gems:install RAILS_ENV=test
+> script/generate cucumber
+> cucumber features
+> script/generate scaffold event name:string short_name:string
+> script/generate scaffold occurences event_id:integer date:date location:string
+> rake db:migrate
+> rake db:test:clone

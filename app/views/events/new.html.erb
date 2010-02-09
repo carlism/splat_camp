@@ -1,0 +1,24 @@
+<h1>New event</h1>
+
+<% form_for(@event) do |f| %>
+  <%= f.error_messages %>
+
+  <%= render :partial => "form", :object => f %>
+
+    <% f.fields_for :occurences do |sub_form| %>
+     <p>
+       <%= sub_form.label :date %><br />
+       <%= sub_form.date_select :date %>
+     </p>
+     <p>
+       <%= sub_form.label :location %><br />
+       <%= sub_form.text_field :location %>
+     </p>
+    <% end %>
+
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', events_path %>

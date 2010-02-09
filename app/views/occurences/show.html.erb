@@ -1,0 +1,18 @@
+<p>
+  <b>Event:</b>
+  <%=h @occurence.event_id %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @occurence.date %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%=h @occurence.location %>
+</p>
+
+
+<%= link_to 'Edit', edit_occurence_path(@occurence) %> |
+<%= link_to 'Back', occurences_path %>

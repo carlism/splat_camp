@@ -1,0 +1,24 @@
+<h1>Listing occurences</h1>
+
+<table>
+  <tr>
+    <th>Event</th>
+    <th>Date</th>
+    <th>Location</th>
+  </tr>
+
+<% @occurences.each do |occurence| %>
+  <tr>
+    <td><%=h occurence.event_id %></td>
+    <td><%=h occurence.date %></td>
+    <td><%=h occurence.location %></td>
+    <td><%= link_to 'Show', occurence %></td>
+    <td><%= link_to 'Edit', edit_occurence_path(occurence) %></td>
+    <td><%= link_to 'Destroy', occurence, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New occurence', new_occurence_path %>
